@@ -1,8 +1,6 @@
-This is an example to showcase the basics of Redux
+This is an example application to showcase the very basics of Redux.
 
 ## Redux Basics
-
-In the project directory, you can run:
 
 ### `What is Redux?`
 
@@ -12,9 +10,12 @@ Redux allows you to centralize your application's state.  What this means is the
 
 ### `Terminology`
 
-Store - the globalized state.
-Action - this describes what you want to do.  In this sample application, I want to increment and decrement the counter state property.
-Reducer - describes how the actions transform the state.  It takes two arguments, the default state, and the action.
+Store - the globalized state.<br/>
+```
+const store = createStore(allReducer);
+```
+Action - this describes what you want to do.  In this sample application, I want to increment and decrement the counter state property.<br/>
+Reducer - describes how the actions transform the state.  It takes two arguments, the default state, and the action.<br/>
 Dispatch - executes the Action.
 
 So when we Dispatch an Action, it gets sent to the Reducer, which updates the Store.
