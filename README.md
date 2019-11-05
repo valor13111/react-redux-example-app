@@ -8,7 +8,7 @@ First, Redux isn't React specific.  Redux can be used in conjunction with other 
 
 Redux allows you to centralize your application's state.  What this means is there is a global state that any component can have access to.
 
-> From redux.js.org <br>
+> From redux.js.org: <br/><br/>
 As the requirements for JavaScript single-page applications have become increasingly complicated, our code must manage more state than ever before. This state can include server responses and cached data, as well as locally created data that has not yet been persisted to the server. UI state is also increasing in complexity, as we need to manage active routes, selected tabs, spinners, pagination controls, and so on.
 
 ### `Terminology`
@@ -32,8 +32,8 @@ export const decrement = () => {
 };
 ```
 
-**type** is the standard for the action name.  Another property of the Object being returned is **payload**, which can accept a parameter and then do something with it in the reducer
-using **action.payload**.
+> *type* is the standard for the action name.  Another property of the Object being returned is *payload*, which can accept a parameter and then do something with it in the reducer
+using ***action.payload***.
 
 **Reducer** - describes how the actions transform the state.  It takes two arguments, the default state, and the action.<br/>
 ```
